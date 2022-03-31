@@ -12,11 +12,11 @@ To make the application started you will have to create an environement and inst
 ## Steps
 
 
--Install python from https://www.python.org/downloads/
+- Install python from https://www.python.org/downloads/
 
--Install pip using this tutorial https://phoenixnap.com/kb/install-pip-windows#:~:text=PIP%20for%20Python%20is%20a,may%20need%20to%20install%20PIP
+- Install pip using this tutorial https://phoenixnap.com/kb/install-pip-windows#:~:text=PIP%20for%20Python%20is%20a,may%20need%20to%20install%20PIP
 
--Open a cmd and cd to the folder with the applications 
+- Open a cmd and cd to the folder with the applications 
 
 - write and run "python -m venv env" to create an environement
 
