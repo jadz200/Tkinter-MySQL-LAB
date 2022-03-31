@@ -1,5 +1,6 @@
 # Laboratory 
 
+To make the application started you will have to create an environement and install the libraries in requirements.txt 
 
 ## **Requirements**
 
@@ -10,7 +11,6 @@
 
 ## Steps
 
-To make the application started you will have to create an environement and install the libraries in requirements.txt to do so:
 
 -Install python from https://www.python.org/downloads/
 
