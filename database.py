@@ -11,9 +11,9 @@ def stat():
     if(name==""):
         print('nothing')
     else:
-        mysqldb =mysql.connect(host="127.0.0.1",user="root",password="E@^KT3Qn!Cf:(}3Y",database="laboratory")
+        mysqldb =mysql.connect(host="127.0.0.1",user="root",password="E@^KT3Qn!Cf:(}3Y",database="university")
         cursor=mysqldb.cursor()
-        query="call laboratory.GetAllProducts(+\""+name+"\");"
+        query="call Procedure(+\""+name+"\");"
         cursor.execute(query)
         records = cursor.fetchall()
         for i, (nums, mins, avg,max) in enumerate(records, start=1):
@@ -28,9 +28,9 @@ def get():
     if(loc==""):
         print('nothing')
     else:
-        mysqldb =mysql.connect(host="127.0.0.1",user="root",password="E@^KT3Qn!Cf:(}3Y",database="laboratory")
+        mysqldb =mysql.connect(host="127.0.0.1",user="root",password="E@^KT3Qn!Cf:(}3Y",database="university")
         cursor=mysqldb.cursor()
-        query="SELECT l.lname,t.tno,t.tname,t.tjob,t.tmgr,t.thiredate,t.tsalary, t.tbonus FROM lab l, Technician t Where l.llocation=\""+loc+"\" AND t.tlno=l.lno"
+        query="SELECT d.dname,p.pno,p.pname,p.pjob,p.pmgr,p.phiredate,p.psalary, p.pbonus FROM department d, professor p Where d.dlocation=\""+loc+"\" AND p.pdno=d.dno"
         cursor.execute(query)
         records = cursor.fetchall()
         for i, (lname, tno, tname,tjob,tmgr,thiredate,tsalary,tbonus) in enumerate(records, start=1):
