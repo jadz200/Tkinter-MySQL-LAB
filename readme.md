@@ -4,9 +4,9 @@ To make the application started you will have to create an environement and inst
 
 ## **Requirements**
 
--Python
+- Python
 
--pip 
+- pip 
 
 
 ## Steps
